@@ -11,6 +11,8 @@ import { DashboardComponent } from './container/dashboard/dashboard.component';
 import { ProfileComponent } from './container/profile/profile.component';
 import { DropdownComponent } from './container/components/dropdown/dropdown.component';
 import { FooterComponent } from './container/components/footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LandingComponent } from './container/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +24,11 @@ import { FooterComponent } from './container/components/footer/footer.component'
     DashboardComponent,
     ProfileComponent,
     DropdownComponent,
-    FooterComponent
+    FooterComponent,
+    LandingComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

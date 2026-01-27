@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoginService } from 'src/app/services/login.service';
+import { MainService } from 'src/app/services/main.service';
 
 @Component({
   selector: 'app-profile',
@@ -13,8 +13,8 @@ export class ProfileComponent {
   }
 
   user: any;
-  constructor(private loginService: LoginService) {
-    this.loginService.user$.subscribe((res) => {
+  constructor(private mainService: MainService) {
+    this.mainService.user$.subscribe((res) => {
       this.user = res;
     });
   }
